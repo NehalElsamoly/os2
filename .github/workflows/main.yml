@@ -12,7 +12,7 @@ jobs:
       - uses: actions/checkout@v3
 
       - name: " login to dockerhub"
-        run: docker login --username nehalelsamoly --password ${{ secrets.DOCKER_TOKEN}}
+        run: docker login --username nehalelsamoly --password dckr_pat_6dI-9ziupCRIfVJuR6lPok-sheM
       - name: " building docker "
         run: docker build -t nehalelsamoly/docker-image-creation .
       - name: " pushing to docker hub "
